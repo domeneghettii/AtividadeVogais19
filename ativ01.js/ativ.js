@@ -1,11 +1,11 @@
-let frase = 'Olá, tenha um bom dia!';
-let minuscula =  frase.toLowerCase();
-let separaçao = minuscula.split("");
-let vogais= [ "a", "e", "i", "o", "u"]
-let exibir
-for (let i = 0; i < separaçao; i++){
-    if (frase == vogais){
-        frase = exibir
-    }
-}
-console.log(exibir);
+let frase = 'oi bom dia';
+let minuscula = frase.toLowerCase();
+let separacao = minuscula.split("");
+let vogais = ['a', 'e', 'i', 'o', 'u'];
+
+let vogaisEncontradas =  separacao.filter(letra => vogais.includes(letra))
+let numero = vogaisEncontradas.length
+
+console.log("A frase é: "+ frase);
+console.log("As vogais encontradas são: " + vogaisEncontradas);
+console.log("O número total de vogais é: " +  numero);
